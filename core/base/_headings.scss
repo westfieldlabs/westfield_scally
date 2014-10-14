@@ -1,0 +1,68 @@
+/* ============================================================================
+   @CORE -> BASE -> HEADINGS
+   ========================================================================= */
+
+
+/**
+ * Double stranded for greater reuse.
+ */
+
+
+/**
+ * Declare the Gotham font for most headings.
+ */
+
+@include headings(1, 5, true) {
+  font-family: $font-family-gotham;
+  font-style: $font-style-gotham;
+}
+
+
+/**
+ * H1.
+ */
+
+h1, .h1 {font-weight: $font-weight-gotham-light;}
+
+
+/**
+ * H2.
+ */
+
+h2, .h2 {font-weight: $font-weight-gotham-light;}
+
+
+/**
+ * H3.
+ */
+
+h3, .h3 {font-weight: $font-weight-gotham-book;}
+
+
+/**
+ * H4.
+ */
+
+h4, .h4 {font-weight: $font-weight-gotham-light;}
+
+
+/**
+ * H5.
+ */
+
+h5, .h5 {
+  font-weight: $font-weight-gotham-medium;
+  text-transform: uppercase;
+}
+
+
+/**
+ * H6.
+ */
+
+h6, .h6 {
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-weight: normal;
+  color: $colour-grey-4;
+}

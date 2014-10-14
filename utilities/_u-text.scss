@@ -1,0 +1,61 @@
+/* ============================================================================
+   @UTILITIES -> TEXT
+   ========================================================================= */
+
+
+/**
+ * Various handy utilities for text.
+ */
+
+
+/**
+ * Apply font families.
+ */
+
+
+/**
+ * Base.
+ */
+
+%u-text-family-base,
+.u-text-family-base {font-family: $font-family-base;}
+
+
+/**
+ * Gotham.
+ */
+
+// Base
+%u-text-family-gotham,
+.u-text-family-gotham {
+  font-family: $font-family-gotham;
+  font-style: $font-style-gotham;
+}
+
+// Light
+%u-text-family-gotham--light,
+.u-text-family-gotham--light {font-weight: $font-weight-gotham-light;}
+
+// Book
+%u-text-family-gotham--book,
+.u-text-family-gotham--book {font-weight: $font-weight-gotham-book;}
+
+// Medium
+%u-text-family-gotham--medium,
+.u-text-family-gotham--medium {font-weight: $font-weight-gotham-medium;}
+
+
+/**
+ * Serif.
+ */
+
+%u-text-family-serif,
+.u-text-family-serif {font-family: $font-family-serif;}
+
+
+/**
+ * Monospace.
+ */
+
+%u-text-family-monospace,
+.u-text-family-monospace {font-family: $font-family-monospace;}
