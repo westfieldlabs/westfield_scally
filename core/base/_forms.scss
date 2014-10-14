@@ -1,0 +1,23 @@
+/* ============================================================================
+   @CORE -> BASE -> FORMS
+   ========================================================================= */
+
+
+/**
+ * Styling the input `placeholder` attribute.
+ */
+
+::-moz-placeholder {
+  text-transform: uppercase;
+  color: $colour-form-input-placeholder;
+}
+
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: $colour-form-input-placeholder;
+}
+
+:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: $colour-form-input-placeholder;
+}
