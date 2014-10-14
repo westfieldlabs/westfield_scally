@@ -1,0 +1,52 @@
+/* ============================================================================
+   @CORE -> SETTINGS -> COLOURS
+   ========================================================================= */
+
+
+/**
+ * These colours make up the Westfield colour palette. Currently coming from
+ * here: http://styleguide.westfieldlabs.com/web/colors but will eventually
+ * be replaced with the new global style guide:
+ * https://westfieldus.app.box.com/s/8zf3m6i8x3gr0pm335xy.
+ *
+ * N.B. these colours should never be overriden at the project-specific level.
+ */
+
+
+/**
+ * Brand.
+ */
+
+// 1
+$colour-brand-1:                    #e23120;
+
+// 2
+$colour-brand-2:                    #d52b1e;
+
+
+/**
+ * Greys.
+ */
+
+// 1
+$colour-grey-1:                     #ddd;
+
+// 2
+$colour-grey-2:                     #ccc;
+
+// 3
+$colour-grey-3:                     #999;
+
+// 4
+$colour-grey-4:                     #6b6d6f;
+
+// 5
+$colour-grey-5:                     #29292b;
+
+
+/**
+ * Forms.
+ */
+
+// Input `placeholder` attribute
+$colour-form-input-placeholder:     $colour-grey-3;
