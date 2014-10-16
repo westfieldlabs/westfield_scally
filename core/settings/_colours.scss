@@ -4,10 +4,8 @@
 
 
 /**
- * These colours make up the Westfield colour palette. Currently coming from
- * here: http://styleguide.westfieldlabs.com/web/colors but will eventually
- * be replaced with the new global style guide:
- * https://westfieldus.app.box.com/s/8zf3m6i8x3gr0pm335xy.
+ * Currently being fed from:
+ * http://styleguide.westfieldlabs.com/web/colors.
  *
  * N.B. these colours should never be overriden at the project-specific level.
  */
@@ -42,6 +40,14 @@ $colour-grey-4:                     #6b6d6f;
 
 // 5
 $colour-grey-5:                     #29292b;
+
+
+/**
+ * Text.
+ */
+
+// Base
+$colour-text-base:                  $colour-grey-4;
 
 
 /**

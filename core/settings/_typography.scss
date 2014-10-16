@@ -1,0 +1,54 @@
+/* ============================================================================
+   @CORE -> SETTINGS -> TYPOGRAPHY
+   ========================================================================= */
+
+
+/**
+ * Currently being fed from:
+ * http://styleguide.westfieldlabs.com/web/typography.
+ */
+
+
+/**
+ * Families.
+ */
+
+// Base
+$font-family-base:            Helvetica, Arial, sans-serif;
+
+// Gotham
+// N.B. served from https://www.typography.com/
+$font-family-gotham:          "Gotham SSm A", "Gotham SSm B", Verdana, sans-serif;
+
+// Serif
+$font-family-serif:           Georgia, Times, "Times New Roman", serif;
+
+
+/**
+ * Styles and Weights.
+ */
+
+// Gotham
+$font-style-gotham:           normal;
+
+$font-weight-gotham-light:    300;
+
+$font-weight-gotham-book:     400;
+
+$font-weight-gotham-medium:   500;
+
+
+/**
+ * Size.
+ */
+
+// Headings
+$font-size-heading-2:         26;
+
+$font-size-heading-3:         18;
+
+$font-size-heading-4:         $font-size-heading-3;
+
+$font-size-heading-5:         14;
+
+$font-size-heading-6:         16;
