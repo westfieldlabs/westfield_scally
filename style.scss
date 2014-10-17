@@ -16,8 +16,7 @@
  *
  * Settings....................your project-specific and Westfield Core
  * framework settings.
- * Scally framework............the entire Scally framework including your
- * overrides.
+ * Scally framework............the Scally framework including your overrides.
  * Westfield Core framework....the entire Westfield Core framework.
  * Your styles.................all your project-specific styles.
  *
@@ -39,12 +38,14 @@
  * Your project-specific settings.
  */
 
-//@import "settings";
+@import "settings";
 
 
 /**
- * Your Westfield Core framework settings.
+ * Westfield Core framework settings.
  */
+
+@import "core/settings/typography";
 
 @import "core/settings/colours";
 
@@ -55,9 +56,8 @@
    ========================================================================= */
 
 /**
- * By default everything is imported. But if you want to be selective and you
- * definitely should, so your CSS is as lean as possible, then only import what
- * you want. The Core section is however mandatory.
+ * Only bring in the parts of Scally you need. The Core section is however
+ * mandatory.
  *
  * Any settings you find set in Scally that you do not wish to keep, simply
  * redefine above/below the relevant `@import`. This means that if Scally, for
@@ -186,80 +186,15 @@
  * LAYOUT.
  */
 
-// Main container
-@import "bower_components/scally/layout/l-container";
-
-// Grid
-@import "bower_components/scally/layout/l-grid";
-
-@import "bower_components/scally/layout/l-grid-pull";
-
-@import "bower_components/scally/layout/l-grid-push";
-
 
 /**
  * COMPONENTS.
  */
 
-@import "bower_components/scally/components/button";
 
 /**
  * UTILITIES.
  */
-
-@import "bower_components/scally/utilities/u-clear-fix";
-
-@import "bower_components/scally/utilities/u-arrow";
-
-@import "bower_components/scally/utilities/u-list";
-
-@import "bower_components/scally/utilities/u-list-block";
-
-@import "bower_components/scally/utilities/u-list-inline";
-
-@import "bower_components/scally/utilities/u-text";
-
-@import "bower_components/scally/utilities/u-widths";
-
-@import "bower_components/scally/utilities/u-table";
-
-@import "bower_components/scally/utilities/u-drop-down";
-
-@import "bower_components/scally/utilities/u-alignments";
-
-@import "bower_components/scally/utilities/u-toggle-visibility";
-
-@import "bower_components/scally/utilities/u-image-replacement";
-
-@import "bower_components/scally/utilities/u-link-complex";
-
-@import "bower_components/scally/utilities/u-link-disguised";
-
-@import "bower_components/scally/utilities/u-link-no-underline";
-
-@import "bower_components/scally/utilities/u-momentum-scrolling";
-
-@import "bower_components/scally/utilities/u-float";
-
-@import "bower_components/scally/utilities/u-new-block-formatting-context";
-
-@import "bower_components/scally/utilities/u-flex-embed";
-
-@import "bower_components/scally/utilities/u-side-by-side";
-
-@import "bower_components/scally/utilities/u-side-by-side-alt";
-
-@import "bower_components/scally/utilities/u-gpu-accelerated";
-
-@import "bower_components/scally/utilities/u-position";
-
-@import "bower_components/scally/utilities/u-display";
-
-@import "bower_components/scally/utilities/u-spacing";
-
-@import "bower_components/scally/utilities/u-divider";
-
-@import "bower_components/scally/utilities/u-columns";
 
 
 
@@ -275,11 +210,12 @@
  *
  * CORE
  * COMPONENTS
+ * UTILITIES
  */
 
 
 /**
- * Core.
+ * CORE.
  */
 
 // Functions
@@ -287,14 +223,23 @@
 // Mixins
 
 // Base
+@import "core/base/headings";
+
 @import "core/base/forms";
 
 // Placeholders
 
 
 /**
- * Components.
+ * COMPONENTS.
  */
+
+
+/**
+ * UTILITIES.
+ */
+
+@import "utilities/u-text";
 
 
 
