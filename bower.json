@@ -22,7 +22,8 @@
     "**/.*",
     "Rakefile",
     "TODO.md",
-    "style.scss"
+    "style.scss",
+    "settings.scss"
   ],
   "dependencies": {
     "scally": "westfieldlabs/scally"
