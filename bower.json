@@ -6,9 +6,10 @@
   "authors": [
     "Chris Pearce <cpearce@westfield.com>",
     "Alec Raeside <araeside@westfield.com>",
-    "Kate Levin <klevin@westfield.com>"
+    "Kate Levin <klevin@westfield.com>",
+    "Sean Gee <sgee@westfield.com>"
   ],
-  "description": "TBD",
+  "description": "Westfield's CSS framework that sits on top of the open source Scally CSS framework",
   "keywords": [
     "scally",
     "css",
@@ -21,7 +22,6 @@
     "**/.*",
     "Rakefile",
     "TODO.md",
-    "settings.scss",
     "style.scss"
   ],
   "dependencies": {
