@@ -3,8 +3,8 @@
 bower_components/
 .sass-cache/
 /style.css
-/style.css.map,
-/style-test.scss,
+/style.css.map
+/style-test.scss
 /TODO.md
 
 # OS generated files #
