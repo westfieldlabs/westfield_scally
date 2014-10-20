@@ -38,16 +38,24 @@
  * Your project-specific settings.
  */
 
-@import "settings";
+//@import "settings";
 
 
 /**
  * Westfield Core framework settings.
  */
 
+// Global
 @import "core/settings/typography";
 
+@import "core/settings/toggles";
+
 @import "core/settings/colours";
+
+// Scally overrides
+@import "core/settings/scally-overrides";
+
+
 
 
 
@@ -234,12 +242,16 @@
  * COMPONENTS.
  */
 
+@import "components/button";
+
 
 /**
  * UTILITIES.
  */
 
 @import "utilities/u-text";
+
+@import "utilities/u-transitions";
 
 
 
