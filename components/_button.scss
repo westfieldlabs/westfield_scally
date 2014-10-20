@@ -1,0 +1,52 @@
+/* ============================================================================
+   @COMPONENTS -> BUTTON
+   ========================================================================= */
+
+
+/**
+ * Button component based off this:
+ * http://styleguide.westfieldlabs.com/web/buttons
+ */
+
+
+/**
+ * Main.
+ */
+
+%btn-main,
+.btn-main {
+  @extend %u-text-family-gotham;
+  @extend %u-text-family-gotham--medium;
+  @extend %u-transition-all-0-15;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {background-color: $colour-btn-main-background-colour-hover;}
+
+  // Disabled state
+  &[disabled],
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus {background-color: $colour-btn-main-background-colour;}
+  }
+}
+
+
+/**
+ * Modifier: secondary colour.
+ */
+
+%btn-main--secondary,
+.btn-main--secondary {
+  &:hover,
+  &:focus {background-color: $colour-btn-main-background-colour-secondary-hover;}
+
+  // Disabled state
+  &[disabled],
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus {background-color: $colour-btn-main-background-colour-secondary;}
+  }
+}
