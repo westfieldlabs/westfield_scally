@@ -4,6 +4,11 @@ bower_components/
 .sass-cache/
 /style.css
 /style.css.map
+/style-test.scss
+/demo-styles.scss
+/demo-styles.css
+/demo-styles.css.map
+/demo.html
 /TODO.md
 
 # OS generated files #

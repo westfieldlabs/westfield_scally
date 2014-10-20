@@ -16,10 +16,24 @@
  */
 
 // 1
-$colour-brand-1:                    #e23120;
+$colour-brand-1:                                     #e23120;
 
 // 2
-$colour-brand-2:                    #d52b1e;
+$colour-brand-2:                                     #d52b1e;
+
+
+/**
+ * Black.
+ */
+
+$colour-black:                                       #000;
+
+
+/**
+ * White.
+ */
+
+$colour-white:                                       #fff;
 
 
 /**
@@ -27,19 +41,19 @@ $colour-brand-2:                    #d52b1e;
  */
 
 // 1
-$colour-grey-1:                     #ddd;
+$colour-grey-1:                                      #ddd;
 
 // 2
-$colour-grey-2:                     #ccc;
+$colour-grey-2:                                      #ccc;
 
 // 3
-$colour-grey-3:                     #999;
+$colour-grey-3:                                      #999;
 
 // 4
-$colour-grey-4:                     #6b6d6f;
+$colour-grey-4:                                      #6b6d6f;
 
 // 5
-$colour-grey-5:                     #29292b;
+$colour-grey-5:                                      #29292b;
 
 
 /**
@@ -47,7 +61,7 @@ $colour-grey-5:                     #29292b;
  */
 
 // Base
-$colour-text-base:                  $colour-grey-4;
+$colour-text-base:                                   $colour-grey-4;
 
 
 /**
@@ -55,4 +69,22 @@ $colour-text-base:                  $colour-grey-4;
  */
 
 // Input `placeholder` attribute
-$colour-form-input-placeholder:     $colour-grey-3;
+$colour-form-input-placeholder:                      $colour-grey-3;
+
+
+/**
+ * Buttons.
+ */
+
+// Main
+$colour-btn-main-background-colour:                  $colour-black;
+
+$colour-btn-main-background-colour-hover:            $colour-brand-2;
+
+$colour-btn-main-background-colour-secondary:        $colour-grey-1;
+
+$colour-btn-main-background-colour-secondary-hover:  $colour-grey-2;
+
+$colour-btn-main-foreground-colour:                  $colour-white;
+
+$colour-btn-main-foreground-colour-secondary:        $colour-grey-4;

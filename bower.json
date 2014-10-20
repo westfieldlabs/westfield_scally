@@ -23,7 +23,12 @@
     "Rakefile",
     "TODO.md",
     "style.scss",
-    "settings.scss",
+    "style.css",
+    "style.css.map",
+    "style-test.scss",
+    "demo-styles.scss",
+    "demo-styles.css",
+    "demo-styles.css.map",
     "demo.html"
   ],
   "dependencies": {

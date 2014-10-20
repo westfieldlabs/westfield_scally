@@ -1,0 +1,36 @@
+/* ============================================================================
+   @CORE -> SETTINGS -> SCALLY OVERRIDES
+   ========================================================================= */
+
+
+/**
+ * This is where any Scally specific settings are overridden.
+ *
+ * The preferred way to do this is to apply the overrides inline above the
+ * relevant Scally partial `@import` in `style.scss` but that can't be done
+ * because by default `style.scss` only imports the mandatory part of Scally
+ * which is Core. So it's cleaner to capture all of the Scally overrides in
+ * it's own file which is included in `style.scss` by default.
+ */
+
+
+
+
+/* Component overrides.
+   ========================================================================= */
+
+/**
+ * Button.
+ */
+
+// Toggles
+$c-btn-hover-styles:                  false;
+
+// Colours
+$c-btn-background-colour:             $colour-btn-main-background-colour;
+
+$c-btn-background-colour-secondary:   $colour-btn-main-background-colour-secondary;
+
+$c-btn-foreground-colour:             $colour-btn-main-foreground-colour;
+
+$c-btn-foreground-colour-secondary:   $colour-btn-main-foreground-colour-secondary;
