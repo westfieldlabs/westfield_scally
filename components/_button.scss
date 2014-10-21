@@ -7,11 +7,6 @@
  * Button component based off this:
  * http://styleguide.westfieldlabs.com/web/buttons
  *
- * N.B. this component is dependant on the following utilities:
- *
- * - Text.
- * - Transitions.
- *
  * @demo
  * http://codepen.io/team/westfieldlabs/full/bBivG/#button
  */
@@ -23,9 +18,9 @@
 
 %btn-main,
 .btn-main {
-  @extend %u-text-family-gotham;
-  @extend %u-text-family-gotham--medium;
-  @extend %u-transition-all-0-15;
+  @extend %core-typography-gotham;
+  @extend %core-transition-all-0-15;
+  font-weight: $font-weight-gotham-book;
   text-transform: uppercase;
 
   &:hover,
