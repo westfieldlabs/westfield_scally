@@ -211,6 +211,9 @@
    ========================================================================= */
 
 /**
+ * As per Scally only bring in the parts of Westfield Core you need. The Core
+ * section is however mandatory.
+ *
  * N.B. the order specified below must always be followed or Westfield Core
  * will break.
  *
@@ -236,22 +239,19 @@
 @import "core/base/forms";
 
 // Placeholders
+@import "core/placeholders/core-transitions";
+
+@import "core/placeholders/core-typography";
 
 
 /**
  * COMPONENTS.
  */
 
-@import "components/button";
-
 
 /**
  * UTILITIES.
  */
-
-@import "utilities/u-text";
-
-@import "utilities/u-transitions";
 
 
 

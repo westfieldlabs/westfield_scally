@@ -29,11 +29,7 @@
  */
 
 // Base
-%u-text-family-gotham,
-.u-text-family-gotham {
-  font-family: $font-family-gotham;
-  font-style: $font-style-gotham;
-}
+.u-text-family-gotham {@extend %core-typography-gotham;}
 
 // Light
 %u-text-family-gotham--light,
