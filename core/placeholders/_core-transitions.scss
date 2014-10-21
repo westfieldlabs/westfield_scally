@@ -1,5 +1,5 @@
 /* ============================================================================
-   @UTILITIES -> TRANSITIONS
+   @CORE -> PLACEHOLDERS -> TRANSITIONS
    ========================================================================= */
 
 
@@ -10,14 +10,11 @@
  *
  * [1 | 2 | 3 | 4 | 5 | 6]
  *
- * 1. Scally type: utility [u]
- * 2. Utility name: transition
+ * 1. Scally type: core
+ * 2. Placeholder name: transition
  * 3. Transition property
  * 5. Transition duration
  * 6. Transition timing function
- *
- * @demo
- * http://codepen.io/team/westfieldlabs/full/kifFz/#transitions
  */
 
 
@@ -25,11 +22,11 @@
  * Most commonly used on buttons and links.
  */
 
-.u-transition-all-0-15 {@extend %core-transition-all-0-15;}
+%core-transition-all-0-15 {transition: all 0.15s;}
 
 
 /**
  * None.
  */
 
-.u-transition-none {@extend %core-transition-none;}
+%core-transition-none {transition: none;}

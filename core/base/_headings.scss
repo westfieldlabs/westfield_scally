@@ -16,8 +16,7 @@
  */
 
 @include headings(1, 5, true) {
-  font-family: $font-family-gotham;
-  font-style: $font-style-gotham;
+  @extend %core-typography-gotham;
 }
 
 
