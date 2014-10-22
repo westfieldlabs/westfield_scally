@@ -18,8 +18,8 @@
 
 %btn-main,
 .btn-main {
-  @extend %core-typography-gotham;
-  @extend %core-transition-all-0-15;
+  @extend %c-typography-gotham;
+  @extend %c-transition-all-0-15;
   font-weight: $font-weight-gotham-book;
   text-transform: uppercase;
 
