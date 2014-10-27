@@ -27,9 +27,8 @@
 }
 
 // Set Gotham `font-weight` for `h1-h2`
-@include headings(1, 2, true){
-  h1, .h1,
-  h2, .h2 {font-weight: $font-weight-gotham-light;}
+@include headings(1, 2, true) {
+  font-weight: $font-weight-gotham-light;
 }
 
 
