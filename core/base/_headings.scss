@@ -21,16 +21,16 @@
 }
 
 // Set Gotham font and make uppercase for `h1-h3`
-h1, .h1,
-h2, .h2,
-h3, .h3 {
+@include headings(1, 3, true) {
   text-transform: uppercase;
   @extend %c-typography-gotham;
 }
 
 // Set Gotham `font-weight` for `h1-h2`
-h1, .h1,
-h2, .h2 {font-weight: $font-weight-gotham-light;}
+@include headings(1, 2, true){
+  h1, .h1,
+  h2, .h2 {font-weight: $font-weight-gotham-light;}
+}
 
 
 /**
@@ -56,5 +56,6 @@ h4, .h4 {
  * H5 and H6.
  */
 
-h5, .h5,
-h6, .h6 {font-weight: bold;}
+@include headings(5, 6, true) {
+  font-weight: bold;
+}
