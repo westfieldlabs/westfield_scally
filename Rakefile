@@ -35,6 +35,8 @@ namespace :test do
       `rm #{css}.map` if File.file?("#{css}.map")
     end
 
-    puts "CSS files cleaned up"
+    `rm -rf bower_components`
+
+    puts "CSS files cleaned up and Bower dependencies removed successfully"
   end
 end
