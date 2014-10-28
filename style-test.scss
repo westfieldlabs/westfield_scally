@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+
+/* ============================================================================
+   @MASTER STYLESHEET
+   ========================================================================= */
+
+
+/**
+ * Scally and Westfield Core, being OO frameworks, work in keeping with the
+ * open/closed principle. Any custom styles *SHOULD NOT* be added or modified
+ * in these frameworks directly. This also allows the frameworks to be updated
+ * seamlessly.
+ *
+ * Contents:
+ *
+ * Settings....................your project-specific and Westfield Core
+ * framework settings.
+ * Scally framework............the Scally framework including your overrides.
+ * Westfield Core framework....the entire Westfield Core framework.
+ * Your styles.................all your project-specific styles.
+ *
+ * N.B. the above order and the order within the Scally and Westfield Core
+ * framework sections must always be followed.
+ */
+
+
+
+
+/* Settings
+   ========================================================================= */
+
+/**
+ * Must be defined first so they can be used throughout your styles.
+ */
+
+/**
+ * Your project-specific settings.
+ */
+
+//@import "settings";
+
+
+/**
+ * Westfield Core framework settings.
+ */
+
+// Global
+@import "core/settings/typography";
+
+@import "core/settings/toggles";
+
+@import "core/settings/colours";
+
+// Scally overrides
+@import "core/settings/scally-overrides";
+
+
+
+
+
+
+/* Scally framework
+   ========================================================================= */
+
+/**
+ * Only bring in the parts of Scally you need. The Core section is however
+ * mandatory.
+ *
+ * Any settings you find set in Scally that you do not wish to keep, simply
+ * redefine above/below the relevant `@import`. This means that if Scally, for
+ * example, sets your `$font-size` at `16px` and you wish it to be `14px`,
+ * simply redeclare it above the relevant `@import`, like so:
+ *
+   $font-size: 14;
+   @import "bower_components/scally/core/settings/typography";
+ *
+ * If you want to use a Scally setting to override something then you need to
+ * define the override below the `@import`, like so:
+ *
+   @import "bower_components/scally/core/settings/colours";
+   $colour-text-base: $colour-brand;
+ *
+ * If you try to redeclare above the `@import` your Sass won't compile as you
+ * don't have access to the Scally setting at the point of compilation.
+ *
+ * All non-Core settings need to be overridden above the `@import`, like so:
+ *
+   $u-arrow-size-base: 14;
+   $u-arrow-colour: orange;
+   @import "bower_components/scally/utilities/u-arrow";
+ *
+ * Scally ignores its own settings in favour of using your own, so you can
+ * completely modify how Scally works without ever having to alter the
+ * framework itself.
+ *
+ * N.B. the order specified below must always be followed or Scally will
+ * break and if you're not using Bower or you customise where Bower installs
+ * then you'll need to update the `@import` paths accordingly.
+ *
+ * Contents:
+ *
+ * CORE
+ * LAYOUT
+ * COMPONENTS
+ * UTILITIES
+ */
+
+
+/**
+ * CORE.
+ *
+ * N.B. this is all mandatory for the Scally framework.
+ */
+
+// Settings
+@import "bower_components/scally/core/settings/typography";
+
+@import "bower_components/scally/core/settings/spacing";
+
+@import "bower_components/scally/core/settings/toggles";
+
+@import "bower_components/scally/core/settings/breakpoints";
+
+@import "bower_components/scally/core/settings/widths";
+
+@import "bower_components/scally/core/settings/colours";
+
+@import "bower_components/scally/core/settings/positioning";
+
+@import "bower_components/scally/core/settings/cosmetics";
+
+// Functions
+@import "bower_components/scally/core/functions/convert-px-to-em-rem";
+
+@import "bower_components/scally/core/functions/math-helpers";
+
+@import "bower_components/scally/core/functions/string-replace";
+
+// Mixins
+@import "bower_components/scally/core/mixins/convert-px-to-em-rem";
+
+@import "bower_components/scally/core/mixins/font-size";
+
+@import "bower_components/scally/core/mixins/gradients";
+
+@import "bower_components/scally/core/mixins/media-queries";
+
+@import "bower_components/scally/core/mixins/generate-at-breakpoints";
+
+@import "bower_components/scally/core/mixins/generate-percentage-classes-at-breakpoints";
+
+@import "bower_components/scally/core/mixins/retina-bg-image";
+
+@import "bower_components/scally/core/mixins/target-browsers";
+
+@import "bower_components/scally/core/mixins/target-headings";
+
+// Normalize
+@import "bower_components/scally/core/normalize";
+
+// Reset
+@import "bower_components/scally/core/reset";
+
+// Debug
+@import "bower_components/scally/core/debug";
+
+// Base
+@import "bower_components/scally/core/base/root";
+
+@import "bower_components/scally/core/base/abbreviation";
+
+@import "bower_components/scally/core/base/forms";
+
+@import "bower_components/scally/core/base/headings";
+
+@import "bower_components/scally/core/base/horizontal-rule";
+
+@import "bower_components/scally/core/base/links";
+
+@import "bower_components/scally/core/base/media";
+
+@import "bower_components/scally/core/base/paragraphs";
+
+@import "bower_components/scally/core/base/print";
+
+@import "bower_components/scally/core/base/viewport";
+
+// Placeholders
+@import "bower_components/scally/core/placeholders/c-bottom-spacing";
+
+
+/**
+ * LAYOUT.
+ */
+
+// Main container
+@import "bower_components/scally/layout/l-container";
+
+// Grid
+@import "bower_components/scally/layout/l-grid";
+
+@import "bower_components/scally/layout/l-grid-pull";
+
+@import "bower_components/scally/layout/l-grid-push";
+
+
+/**
+ * COMPONENTS.
+ */
+
+@import "bower_components/scally/components/button";
+
+
+/**
+ * UTILITIES.
+ */
+
+@import "bower_components/scally/utilities/u-clear-fix";
+
+@import "bower_components/scally/utilities/u-arrow";
+
+@import "bower_components/scally/utilities/u-list";
+
+@import "bower_components/scally/utilities/u-list-block";
+
+@import "bower_components/scally/utilities/u-list-inline";
+
+@import "bower_components/scally/utilities/u-text";
+
+@import "bower_components/scally/utilities/u-widths";
+
+@import "bower_components/scally/utilities/u-table";
+
+@import "bower_components/scally/utilities/u-drop-down";
+
+@import "bower_components/scally/utilities/u-alignments";
+
+@import "bower_components/scally/utilities/u-toggle-visibility";
+
+@import "bower_components/scally/utilities/u-image-replacement";
+
+@import "bower_components/scally/utilities/u-link-complex";
+
+@import "bower_components/scally/utilities/u-link-disguised";
+
+@import "bower_components/scally/utilities/u-link-no-underline";
+
+@import "bower_components/scally/utilities/u-momentum-scrolling";
+
+@import "bower_components/scally/utilities/u-float";
+
+@import "bower_components/scally/utilities/u-new-block-formatting-context";
+
+@import "bower_components/scally/utilities/u-flex-embed";
+
+@import "bower_components/scally/utilities/u-side-by-side";
+
+@import "bower_components/scally/utilities/u-side-by-side-alt";
+
+@import "bower_components/scally/utilities/u-gpu-accelerated";
+
+@import "bower_components/scally/utilities/u-position";
+
+@import "bower_components/scally/utilities/u-display";
+
+@import "bower_components/scally/utilities/u-spacing";
+
+@import "bower_components/scally/utilities/u-divider";
+
+@import "bower_components/scally/utilities/u-columns";
+
+
+
+
+/* Westfield Core framework
+   ========================================================================= */
+
+/**
+ * As per Scally only bring in the parts of Westfield Core you need. The Core
+ * section is however mandatory.
+ *
+ * N.B. the order specified below must always be followed or Westfield Core
+ * will break.
+ *
+ * Contents:
+ *
+ * CORE
+ * COMPONENTS
+ * UTILITIES
+ */
+
+
+/**
+ * CORE.
+ */
+
+// Functions
+
+// Mixins
+
+// Base
+@import "core/base/headings";
+
+@import "core/base/forms";
+
+// Placeholders
+@import "core/placeholders/c-typography";
+
+@import "core/placeholders/c-transitions";
+
+
+/**
+ * COMPONENTS.
+ */
+
+@import "components/button";
+
+
+/**
+ * UTILITIES.
+ */
+
+@import "utilities/u-text";
+
+@import "utilities/u-transitions";
+
+
+
+
+/* Your styles
+   ========================================================================= */
