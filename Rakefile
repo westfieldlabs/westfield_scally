@@ -7,7 +7,6 @@ namespace :test do
   desc "Install Bower dependencies"
   task :install_bower_deps do
 
-    `rm -rf bower_components`
     # https://github.com/bower/bower/pull/1163
     result  = `bower install westfieldlabs/scally --config.interactive=false`
 
