@@ -29,6 +29,7 @@ namespace :test do
 
   desc "Clean up CSS files"
   task :cleanup do
+
     Dir["*.css"].each do |css|
       `rm #{css}`
       `rm #{css}.map` if File.file?("#{css}.map")
@@ -38,4 +39,5 @@ namespace :test do
 
     puts "CSS files cleaned up and Bower dependencies removed successfully"
   end
+
 end
