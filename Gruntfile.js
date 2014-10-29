@@ -10,7 +10,6 @@ module.exports = function(grunt) {
         // This will prefix each ID
         prefix: 'icon-',
         cleanup: ["fill"],
-        //=includedemo: true,
         /*
           Write a custom function to strip the first part of the file that Adobe Illustrator generates when exporting the artboards to SVG
         */
@@ -20,7 +19,7 @@ module.exports = function(grunt) {
       },
       icons: {
         files: {
-          "components/icon/src/icons.svg": ["components/icon/svgs/*.svg"]
+          "components/icon/src/icons.svg": "components/icon/svgs/*.svg"
         }
       }
     },
@@ -28,7 +27,7 @@ module.exports = function(grunt) {
     svginjector: {
       icons: {
         files: {
-          "components/icon/src/icons.js": ["components/icon/src/icons.svg"]
+          "components/icon/src/icons.js": "components/icon/src/icons.svg"
         },
         options: {
           container: "icon-container"
