@@ -1,0 +1,81 @@
+/* ============================================================================
+   @COMPONENTS -> ICON
+   ========================================================================= */
+
+
+/**
+ * An icon component using inline SVG.
+ *
+ * @todo
+ * - <https://github.com/svg/svgo>.
+ *
+ * @consideration
+ * Need to look into how the text node within the `symbol`s `title` element
+ * is handled by screen readers. `aria-hidden="true"` on the `svg` element?
+ *
+ * @credit
+ * http://css-tricks.com/svg-sprites-use-better-icon-fonts/
+ *
+ * @demo
+ * http://codepen.io/team/westfieldlabs/full/bBivG/#icon
+ */
+
+
+/**
+ * Settings.
+ */
+
+// Size
+$icon-size: 24;
+
+
+.icon {
+  display: inline-block;
+  @include to-rem(width height, $icon-size);
+}
+
+
+/**
+ * Modifiers: sizes.
+ */
+
+// Small
+.icon--size-small         {@include to-rem(width height, $icon-size - 2);}
+
+.icon--size-x-small       {@include to-rem(width height, $icon-size - 4);}
+
+.icon--size-xx-small      {@include to-rem(width height, $icon-size - 6);}
+
+.icon--size-xxx-small     {@include to-rem(width height, $icon-size - 8);}
+
+// Large
+.icon--size-large         {@include to-rem(width height, $icon-size + 4);}
+
+.icon--size-x-large       {@include to-rem(width height, $icon-size + 8);}
+
+.icon--size-xx-large      {@include to-rem(width height, $icon-size + 12);}
+
+.icon--size-xxx-large     {@include to-rem(width height, $icon-size + 16);}
+
+// Huge
+.icon--size-huge          {@include to-rem(width height, $icon-size * 2);}
+
+.icon--size-x-huge        {@include to-rem(width height, $icon-size * 3);}
+
+.icon--size-xx-huge       {@include to-rem(width height, $icon-size * 3.5);}
+
+.icon--size-xxx-huge      {@include to-rem(width height, $icon-size * 4);}
+
+
+/**
+ * Modifiers: colours.
+ */
+
+// White
+.icon--colour-white use   {fill: $colour-white;}
+
+// Brand
+.icon--colour-brand use   {fill: $colour-brand-1;}
+
+// Grey
+.icon--colour-grey use    {fill: $colour-grey-3;}
