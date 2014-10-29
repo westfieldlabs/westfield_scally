@@ -2,6 +2,8 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks("grunt-svgstore");
   grunt.loadNpmTasks("grunt-svginjector");
+  grunt.loadNpmTasks("grunt-svgmin");
+  //require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
 
@@ -24,10 +26,26 @@ module.exports = function(grunt) {
       }
     },
 
+    svgmin: {
+      options: {
+        plugins: [
+          { removeUselessStrokeAndFill: false },
+          { removeTitle: true },
+          { cleanupIDs: false },
+          { removeDesc: true }
+        ]
+      },
+      icons: {
+        files: {
+          "components/icon/src/icons-min.svg": "components/icon/src/icons.svg"
+        }
+      }
+    },
+
     svginjector: {
       icons: {
         files: {
-          "components/icon/src/icons.js": "components/icon/src/icons.svg"
+          "components/icon/src/icons.js": "components/icon/src/icons-min.svg"
         },
         options: {
           container: "icon-container"
@@ -37,6 +55,7 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask("icons", ["svgstore:icons", "svginjector:icons"]);
+  grunt.registerTask("icons",
+    ["svgstore:icons", "svgmin:icons", "svginjector:icons"]);
 
 }
