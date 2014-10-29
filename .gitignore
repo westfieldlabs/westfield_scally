@@ -9,6 +9,7 @@ bower_components/
 /demo-styles.css.map
 /demo.html
 /TODO.md
+/node_modules
 
 # OS generated files #
 ######################
