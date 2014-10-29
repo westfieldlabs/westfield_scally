@@ -7,13 +7,19 @@
     "type": "git",
     "url": "https://github.com/westfield/westfield_core"
   },
-  "author": "Chris Pearce",
+  "author": [
+    "Chris Pearce <cpearce@westfield.com>",
+    "Alec Raeside <araeside@westfield.com>",
+    "Kate Levin <klevin@westfield.com>",
+    "Sean Gee <sgee@westfield.com>"
+  ],
   "bugs": {
     "url": "https://github.com/westfield/westfield_core/issues"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-svginjector": "^0.1.1",
+    "grunt-svgmin": "^1.0.0",
     "grunt-svgstore": "^0.3.6"
   },
   "dependencies": {}
