@@ -3,7 +3,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-svgstore");
   grunt.loadNpmTasks("grunt-svginjector");
   grunt.loadNpmTasks("grunt-svgmin");
-  //require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
 
