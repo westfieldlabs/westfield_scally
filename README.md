@@ -17,6 +17,9 @@ Think of WFC as the lick of paint and Scally as the scaffolding.
 
 Use the repo's [GitHub Issues](https://github.com/westfield/westfield_core/issues) to log any issues, additions, enhancements, or ideas.
 
+
+
+
 # Browser Support
 
 - IE9+.
@@ -25,3 +28,28 @@ Use the repo's [GitHub Issues](https://github.com/westfield/westfield_core/issue
 - Opera.
 - Safari (incl. iOS).
 - Android 3+.
+
+
+
+
+# Linting
+
+To ensure a consistent authored code base and to keep things clean and readable Scally uses the [`scss-lint` tool](https://github.com/causes/scss-lint).
+
+## Installation and usage
+
+To install run the following command:
+
+    gem install scss-lint
+
+Which will install the Ruby Gem.
+
+To use `cd` into your project's root and run the command:
+
+    scss-lint ./
+
+Which will lint *everything*, to lint at a more granular level [see](https://github.com/causes/scss-lint#usage).
+
+## Linting rules
+
+Scally's linting rules can be [found here](.scss-lint.yml). And Scally has a Rake test setup that'll run the `scss-lint` tool automatically to ensure no badly formatted CSS goes into the framework.
