@@ -1,5 +1,5 @@
 desc "Test if SASS files are compiling"
-task test: ["test:install_bower_deps", "test:compile", "test:cleanup"]
+task test: ["test:install_bower_deps", "test:compile", "test:cleanup", "test:lint"]
 
 desc "SASS test tasks"
 namespace :test do
@@ -38,6 +38,19 @@ namespace :test do
     `rm -rf bower_components`
 
     puts "CSS files cleaned up and Bower dependencies removed successfully"
+  end
+
+  desc "Lint SASS files"
+  task :lint do
+
+    `gem install scss-lint`
+    result = `scss-lint ./ --exclude bower_components`
+
+    if result.include? "[E]"
+      raise "Linting Sass files failed"
+    else
+      puts "Sass files linted successfully"
+    end
   end
 
 end
