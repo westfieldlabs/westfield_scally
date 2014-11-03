@@ -34,7 +34,7 @@ Use the repo's [GitHub Issues](https://github.com/westfield/westfield_core/issue
 
 # Linting
 
-To ensure a consistent authored code base and to keep things clean and readable Scally uses the [`scss-lint` tool](https://github.com/causes/scss-lint).
+To ensure a consistent authored code base and to keep things clean and readable WFC uses the [`scss-lint` tool](https://github.com/causes/scss-lint).
 
 ## Installation and usage
 
@@ -52,4 +52,4 @@ Which will lint *everything*, to lint at a more granular level [see](https://git
 
 ## Linting rules
 
-Scally's linting rules can be [found here](.scss-lint.yml). And Scally has a Rake test setup that'll run the `scss-lint` tool automatically to ensure no badly formatted CSS goes into the framework.
+WFC's linting rules can be [found here](.scss-lint.yml). And WFC has a Rake test setup that'll run the `scss-lint` tool automatically to ensure no badly formatted CSS goes into the framework.
