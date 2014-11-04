@@ -21,6 +21,8 @@ namespace :test do
   task :install_bower_deps do
 
     # https://github.com/bower/bower/pull/1163
+    `npm install`
+    `npm install -g bower`
     result  = `bower install westfieldlabs/scally --config.interactive=false`
 
     puts "Bower dependencies installed successfully"
