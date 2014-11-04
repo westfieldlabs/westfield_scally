@@ -27,19 +27,6 @@ namespace :test do
 
   end
 
-  desc "Lint SASS files"
-  task :lint do
-
-    `gem install scss-lint`
-    result = `scss-lint ./`
-
-    if result.include? "[E]"
-      raise "Linting Sass files failed"
-    else
-      puts "Sass files linted successfully"
-    end
-  end
-
   desc "Clean up CSS files"
   task :cleanup do
 
@@ -48,7 +35,7 @@ namespace :test do
       `rm #{css}.map` if File.file?("#{css}.map")
     end
 
-    #`rm -rf bower_components`
+    `rm -rf bower_components`
 
     puts "CSS files cleaned up and Bower dependencies removed successfully"
   end
