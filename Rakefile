@@ -1,5 +1,5 @@
 desc "Test if SASS files are compiling"
-task test: ["test:install_bower_deps", "test:compile", "test:lint", "test:cleanup"]
+task test: ["test:install_bower_deps", "test:compile", "test:cleanup"]
 
 desc "SASS test tasks"
 namespace :test do
