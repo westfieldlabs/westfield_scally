@@ -40,31 +40,31 @@ $icon-size: 24;
  */
 
 // Small
-.icon--size-small         {@include to-rem(width height, $icon-size - 2);}
+.icon--size-small {@include to-rem(width height, $icon-size - 2);}
 
-.icon--size-x-small       {@include to-rem(width height, $icon-size - 4);}
+.icon--size-x-small {@include to-rem(width height, $icon-size - 4);}
 
-.icon--size-xx-small      {@include to-rem(width height, $icon-size - 6);}
+.icon--size-xx-small {@include to-rem(width height, $icon-size - 6);}
 
-.icon--size-xxx-small     {@include to-rem(width height, $icon-size - 8);}
+.icon--size-xxx-small {@include to-rem(width height, $icon-size - 8);}
 
 // Large
-.icon--size-large         {@include to-rem(width height, $icon-size + 4);}
+.icon--size-large {@include to-rem(width height, $icon-size + 4);}
 
-.icon--size-x-large       {@include to-rem(width height, $icon-size + 8);}
+.icon--size-x-large {@include to-rem(width height, $icon-size + 8);}
 
-.icon--size-xx-large      {@include to-rem(width height, $icon-size + 12);}
+.icon--size-xx-large {@include to-rem(width height, $icon-size + 12);}
 
-.icon--size-xxx-large     {@include to-rem(width height, $icon-size + 16);}
+.icon--size-xxx-large {@include to-rem(width height, $icon-size + 16);}
 
 // Huge
-.icon--size-huge          {@include to-rem(width height, $icon-size * 2);}
+.icon--size-huge {@include to-rem(width height, $icon-size * 2);}
 
-.icon--size-x-huge        {@include to-rem(width height, $icon-size * 3);}
+.icon--size-x-huge {@include to-rem(width height, $icon-size * 3);}
 
-.icon--size-xx-huge       {@include to-rem(width height, $icon-size * 3.5);}
+.icon--size-xx-huge {@include to-rem(width height, $icon-size * 3.5);}
 
-.icon--size-xxx-huge      {@include to-rem(width height, $icon-size * 4);}
+.icon--size-xxx-huge {@include to-rem(width height, $icon-size * 4);}
 
 
 /**
@@ -72,10 +72,10 @@ $icon-size: 24;
  */
 
 // White
-.icon--colour-white use   {fill: $colour-white;}
+.icon--colour-white use {fill: $colour-white;}
 
 // Brand
-.icon--colour-brand use   {fill: $colour-brand-1;}
+.icon--colour-brand use {fill: $colour-brand-1;}
 
 // Grey
-.icon--colour-grey use    {fill: $colour-grey-3;}
+.icon--colour-grey use {fill: $colour-grey-3;}

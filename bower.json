@@ -19,7 +19,9 @@
     "westfield"
   ],
   "ignore": [
-    "**/.*",
+    ".gitignore",
+    ".travis.yml",
+    ".version",
     "Rakefile",
     "TODO.md",
     "style.scss",

@@ -36,14 +36,16 @@
  * H3.
  */
 
-h3, .h3 {font-weight: $font-weight-gotham-medium;}
+h3,
+.h3 {font-weight: $font-weight-gotham-medium;}
 
 
 /**
  * H4.
  */
 
-h4, .h4 {
+h4,
+.h4 {
   font-family: $font-family-serif;
   font-style: italic;
   font-weight: normal;
