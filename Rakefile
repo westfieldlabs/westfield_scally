@@ -1,5 +1,5 @@
 desc "Test if SASS files are compiling"
-task test: ["test:install_bower_deps", "test:compile", "test:cleanup"]
+task test: ["test:install_bower_deps", "test:compile", "test:lint", "test:cleanup"]
 
 desc "SASS test tasks"
 namespace :test do
@@ -27,19 +27,6 @@ namespace :test do
 
   end
 
-  desc "Clean up CSS files"
-  task :cleanup do
-
-    Dir["*.css"].each do |css|
-      `rm #{css}`
-      `rm #{css}.map` if File.file?("#{css}.map")
-    end
-
-    `rm -rf bower_components`
-
-    puts "CSS files cleaned up and Bower dependencies removed successfully"
-  end
-
   desc "Lint SASS files"
   task :lint do
 
@@ -51,6 +38,19 @@ namespace :test do
     else
       puts "Sass files linted successfully"
     end
+  end
+
+  desc "Clean up CSS files"
+  task :cleanup do
+
+    Dir["*.css"].each do |css|
+      `rm #{css}`
+      `rm #{css}.map` if File.file?("#{css}.map")
+    end
+
+    #`rm -rf bower_components`
+
+    puts "CSS files cleaned up and Bower dependencies removed successfully"
   end
 
 end
