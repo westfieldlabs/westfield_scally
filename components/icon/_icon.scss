@@ -77,5 +77,7 @@ $icon-size: 24;
 // Brand
 .icon--colour-brand use {fill: $colour-brand-1;}
 
-// Grey
-.icon--colour-grey use {fill: $colour-grey-3;}
+// Greys
+.icon--colour-grey-light use {fill: $colour-grey-3;}
+
+.icon--colour-grey-dark use {fill: $colour-grey-5;}
