@@ -15,10 +15,9 @@
  * Brand.
  */
 
-// 1
-$colour-brand-1:                                     #e23120;
+$colour-brand-1:                                     #da291c;
 
-// 2
+// Alternate version
 $colour-brand-2:                                     #d52b1e;
 
 
@@ -68,15 +67,18 @@ $colour-text-base:                                   $colour-grey-4;
  * Links.
  */
 
-$colour-link:                                         $colour-grey-5;
+$colour-link:                                        $colour-grey-5;
 
 // Hover
-$colour-link-hover:                                   $colour-link;
+$colour-link-hover:                                  $colour-link;
 
 
 /**
  * Forms.
  */
+
+// Text colour
+$colour-text-input-and-select-text:                  $colour-grey-5;
 
 // Input `placeholder` attribute
 $colour-form-input-placeholder:                      $colour-grey-3;
