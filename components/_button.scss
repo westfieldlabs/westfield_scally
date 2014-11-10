@@ -26,7 +26,11 @@
   &:hover,
   &:focus {background-color: $colour-btn-main-background-colour-hover;}
 
-  // Disabled state
+
+  /**
+   * Disabled state.
+   */
+
   &[disabled],
   &.is-disabled {
     &,
@@ -45,7 +49,11 @@
   &:hover,
   &:focus {background-color: $colour-btn-main-background-colour-secondary-hover;}
 
-  // Disabled state
+
+  /**
+   * Disabled state.
+   */
+
   &[disabled],
   &.is-disabled {
     &,

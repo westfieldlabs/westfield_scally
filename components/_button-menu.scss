@@ -1,0 +1,61 @@
+/* ============================================================================
+   @COMPONENTS -> BUTTON MENU
+   ========================================================================= */
+
+
+/**
+ * Menu button component mostly used as the trigger for hiding and showing
+ * menu's.
+ *
+ * @demo
+ * http://codepen.io/team/westfieldlabs/full/bBivG/#button-menu
+ */
+
+
+/**
+ * Settings.
+ *
+ * N.B. we're allowing the overriding of colours because at the project level
+ * the background colour of the UI the button sits on might not always be dark.
+ */
+
+// Text colour
+$c-btn-menu-text-colour:          $colour-white !default;
+
+$c-btn-menu-text-colour-hover:    $colour-brand-1 !default;
+
+// Border colour
+$c-btn-menu-border-colour:        $colour-white !default;
+
+$c-btn-menu-border-colour-hover:  $colour-brand-1 !default;
+
+
+.btn-menu {
+  @extend %c-transition-all-0-15;
+  color: $c-btn-menu-text-colour;
+  text-transform: uppercase;
+  @include font-size($font-size-xxx-small, 1.5);
+  @include to-rem(border-top border-bottom, 1 solid $c-btn-menu-border-colour);
+  @include to-rem(padding-top padding-bottom, $u-spacing-micro);
+
+  &:hover,
+  &:focus {
+    color: $c-btn-menu-text-colour-hover;
+    border-color: $c-btn-menu-border-colour-hover;
+  }
+
+
+  /**
+   * Disabled state.
+   */
+
+  &[disabled],
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus {
+      color: $c-btn-menu-text-colour;
+      border-color: $c-btn-menu-border-colour;
+    }
+  }
+}
