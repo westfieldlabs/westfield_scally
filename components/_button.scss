@@ -5,7 +5,8 @@
 
 /**
  * Button component based off this:
- * http://styleguide.westfieldlabs.com/web/buttons
+ * http://styleguide.westfieldlabs.com/web/buttons and inherits the Scally
+ * button component.
  *
  * @demo
  * http://codepen.io/team/westfieldlabs/full/bBivG/#button
@@ -24,7 +25,8 @@
   text-transform: uppercase;
 
   &:hover,
-  &:focus {background-color: $colour-btn-main-background-colour-hover;}
+  &:focus,
+  &.is-active {background-color: $colour-btn-main-background-colour-hover;}
 
 
   /**
@@ -47,7 +49,8 @@
 %btn-main--secondary,
 .btn-main--secondary {
   &:hover,
-  &:focus {background-color: $colour-btn-main-background-colour-secondary-hover;}
+  &:focus,
+  &.is-active {background-color: $colour-btn-main-background-colour-secondary-hover;}
 
 
   /**
@@ -61,3 +64,66 @@
     &:focus {background-color: $colour-btn-main-background-colour-secondary;}
   }
 }
+
+
+/**
+ * Modifier: filter.
+ *
+ * A button used for filtering which consists of a label and a count.
+ *
+ * @markup
+   <button type="submit" class="btn btn-main btn-main--filter">
+     <span class="btn-main--filter___label">Mother's Day Sale</span><!--
+     --><span class="btn-main--filter___count"> 48</span>
+   </button>
+ */
+
+%btn-main--filter,
+.btn-main--filter {
+  color: $colour-black;
+  background-color: $colour-white;
+  @include to-rem(border, 1 solid $colour-grey-4);
+  text-align: left;
+
+  &:hover,
+  &:focus,
+  &.is-active {
+    color: $colour-white;
+    background-color: $colour-black;
+    border-color: $colour-black;
+  }
+
+
+  /**
+   * Disabled state.
+   */
+
+  &[disabled],
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus {
+      color: $colour-black;
+      background-color: $colour-white;
+      border-color: $colour-grey-4;
+    }
+  }
+}
+
+
+  /**
+   * Shared: label and count.
+   */
+
+  .btn-main--filter___label,
+  .btn-main--filter___count {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+
+  /**
+   * The label.
+   */
+
+  .btn-main--filter___label {@include to-rem(margin-right, $spacing-half);}
