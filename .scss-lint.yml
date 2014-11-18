@@ -3,8 +3,7 @@
 exclude: [
   "*.css",
   "demo-styles.scss",
-  "core/_normalize.scss",
-  "core/_debug.scss"
+  "bower_components/scally/**"
 ]
 
 linters:
@@ -139,6 +138,7 @@ linters:
   QualifyingElement:
     severity: warning
     enabled: true
+    allow_element_with_attribute: true
 
   # https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md#selectordepth
   SelectorDepth:
@@ -147,11 +147,12 @@ linters:
 
   # https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md#selectorformat
   SelectorFormat:
+    severity: warning
     enabled: true
-    convention: BEM
-    # ignored_names: ['*js-', '*is-'] >> Doesn't support file matching (yet) <<
-    ignored_types: element
-    class_convention: BEM
+    convention: hyphenated_BEM
+    #ignored_names: ['*js-', '*is-']
+    ignored_types: placeholder
+    class_convention: hyphenated_BEM
     attribute_convention: hyphenated_lowercase
     id_convention: hyphenated_lowercase
     placeholder_convention: hyphenated_lowercase
