@@ -53,3 +53,9 @@ Which will lint *everything*, to lint at a more granular level [see](https://git
 ## Linting rules
 
 WFC's linting rules can be [found here](.scss-lint.yml). And WFC has a Rake test setup that'll run the `scss-lint` tool automatically to ensure no badly formatted CSS goes into the framework.
+
+# Licence
+
+Copyright 2014 Westfield Labs Corporation
+
+Licensed under the [Apache v2.0](http://www.apache.org/licenses/LICENSE-2.0.html) licence.
